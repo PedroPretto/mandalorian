@@ -4,6 +4,6 @@ const routes = express.Router();
 const AccountController = require("./controllers/AccountControllers");
 
 routes.post("/signup", AccountController.create);
-routes.get('/', AccountController.list)
+routes.post('/login', AccountController.login)
 
 module.exports = routes;
