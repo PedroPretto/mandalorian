@@ -1,6 +1,5 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@800&family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
 
 //Components
 @import './components/Banner/Banner.scss';
@@ -12,6 +11,7 @@
 //Global
 * {
   box-sizing: border-box;
+  font-family: 'Pathway Gothic One', sans-serif;
   padding: 0;
   margin: 0;
   outline: 0;
@@ -19,14 +19,11 @@
 
 
 body, html{
-  font-family: 'Roboto', sans-serif;
   width: 100vw;
   height: 100%;
+  overflow: clip;
 }
 
-h1{
-  font-family: 'Pathway Gothic One', sans-serif;
-}
 #root, .App{
   height: 100%;
 }
