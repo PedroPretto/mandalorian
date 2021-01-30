@@ -1,8 +1,12 @@
 import React from 'react'
+import logo from '../../assets/mando.png'
 
 const Login: React.FC = () => {
     return(
         <div className='loginContent'>
+
+            <img src={logo} alt=""/>
+
             <div className="form">
                 <div className="inputs">
                     <input required type="text" className="logininput"/>
