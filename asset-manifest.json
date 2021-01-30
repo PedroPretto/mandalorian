@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/mandalorian/static/css/main.bdc4d509.chunk.css",
+    "main.js": "/mandalorian/static/js/main.192ffff5.chunk.js",
+    "main.js.map": "/mandalorian/static/js/main.192ffff5.chunk.js.map",
+    "runtime-main.js": "/mandalorian/static/js/runtime-main.e7359504.js",
+    "runtime-main.js.map": "/mandalorian/static/js/runtime-main.e7359504.js.map",
+    "static/js/2.5c0c8277.chunk.js": "/mandalorian/static/js/2.5c0c8277.chunk.js",
+    "static/js/2.5c0c8277.chunk.js.map": "/mandalorian/static/js/2.5c0c8277.chunk.js.map",
+    "index.html": "/mandalorian/index.html",
+    "static/css/main.bdc4d509.chunk.css.map": "/mandalorian/static/css/main.bdc4d509.chunk.css.map",
+    "static/js/2.5c0c8277.chunk.js.LICENSE.txt": "/mandalorian/static/js/2.5c0c8277.chunk.js.LICENSE.txt",
+    "static/media/mando.91f65d5a.png": "/mandalorian/static/media/mando.91f65d5a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e7359504.js",
+    "static/js/2.5c0c8277.chunk.js",
+    "static/css/main.bdc4d509.chunk.css",
+    "static/js/main.192ffff5.chunk.js"
+  ]
+}
