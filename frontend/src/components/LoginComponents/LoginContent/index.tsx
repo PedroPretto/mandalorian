@@ -9,6 +9,10 @@ interface login{
     password: string
 }
 
+interface loginResponse{
+    id: string
+}
+
 const Login: React.FC = () => {
 
     const user = {
@@ -22,7 +26,7 @@ const Login: React.FC = () => {
     const handleLogin = (login: login) =>{
         const {user, password} = login
         try{
-            api.post('/login', {user,password}).then(res =>{
+            api.post<loginResponse>('/login', {user,password}).then(res =>{
                 console.log(res)
                 dispatcher(loginAction(res.data.id[0]))
             })
@@ -38,12 +42,12 @@ const Login: React.FC = () => {
 
             <div className="form">
                 <div className="inputs">
-                    <input required type="text" className="logininput"/>
+                    <input required name="user" type="text" className="logininput"/>
                     <label>Username</label>
                 </div>
 
                 <div className="inputs">
-                    <input required type="password" />
+                    <input required name="password" type="password" />
                     <label>Password</label>
                 </div>
 

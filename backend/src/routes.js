@@ -1,9 +1,9 @@
 const express = require("express");
 
 const routes = express.Router();
-const AccountController = require("./controllers/AccountControllers");
+const LoginApi = require("./api/loginApi");
 
-routes.post("/signup", AccountController.create);
-routes.post('/login', AccountController.login)
+routes.post("/signup", LoginApi.create);
+routes.post('/login', LoginApi.login)
 
 module.exports = routes;
