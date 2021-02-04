@@ -1,13 +1,13 @@
 const connection = require('../database/connection')
 const crypto = require('crypto');
-const { exists } = require('fs');
 
 module.exports = {
     async create(req, res){
         const {user, email, password} = req.body
+        console.log(req.body)
         const id = crypto.randomBytes(4).toString("HEX");
         const exist = await connection('accounts').select().where('email', email)
-
+        console.log(exist)
         if(!exist){
             await connection('accounts').insert({
                 id,
@@ -24,11 +24,12 @@ module.exports = {
     },
 
     async login(req, res){
+        console.log(req.body)
         const id = await connection('accounts').where({
             user: req.body.user,
             password: req.body.password
         }).select('id')
 
-        return res.json(id)
+        return res.json({id})
     },
 }
