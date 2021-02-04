@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/mando.png'
+import logo from '../../../assets/mando.png'
 
 const Banner: React.FC = () => {
     return(
